@@ -1,3 +1,6 @@
 rootProject.name = 'RNNDecktransitionDemo'
 
 include ':app'
+
+include ':react-native-navigation'
+project(':react-native-navigation').projectDir = new File(rootProject.projectDir, '../node_modules/jyrno42-react-native-navigation/lib/android/app/')

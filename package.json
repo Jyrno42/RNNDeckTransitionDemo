@@ -4,9 +4,12 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
+    "android": "cd ./android && ./gradlew app:assembleDebug && ./gradlew installDebug",
+    "xcode": "open ios/RNNDeckTransitionDemo.xcodeproj",
     "test": "jest"
   },
   "dependencies": {
+    "jyrno42-react-native-navigation": "2.12.0-decktransition-demo",
     "react": "16.6.3",
     "react-native": "0.58.5"
   },
