@@ -17,6 +17,9 @@ export default class App extends Component<Props> {
     Navigation.showModal({
       component: {
         name: 'navigation.playground.InModalScreen',
+        passProps: {
+          stackDepth: 1
+        },
         options: {
           modalPresentationStyle: Platform.OS === 'android' ? 'overCurrentContext' : undefined, // Required on android to force rendering of previous screen behind current modal
 
@@ -38,8 +41,8 @@ export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome to React Native!</Text>
-        <TouchableOpacity>
+        <Text style={styles.welcome} testID="WELCOME">Welcome to React Native!</Text>
+        <TouchableOpacity testID="ROOT_OPEN_MODAL">
           <Text onPress={this.openModal} style={styles.link}>Open a modal</Text>
         </TouchableOpacity>
       </View>
