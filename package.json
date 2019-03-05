@@ -9,7 +9,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "jyrno42-react-native-navigation": "2.12.0-decktransition-demo",
+    "jyrno42-react-native-navigation": "2.13.1-decktransition-demo",
     "react": "16.6.3",
     "react-native": "0.58.5"
   },

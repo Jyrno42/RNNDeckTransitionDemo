@@ -16,7 +16,7 @@ export default class App extends Component<Props> {
               enable: true,
               enableDeck: true
             },
-            hideModal: {
+            dismissModal: {
               enable: true,
               enableDeck: true
             }
@@ -56,7 +56,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     elevation: 4,
-    marginVertical: Platform.OS === 'android' ? 32 : 0,
   },
   welcome: {
     fontSize: 20,

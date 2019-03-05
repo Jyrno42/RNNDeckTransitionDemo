@@ -25,7 +25,7 @@ export default class App extends Component<Props> {
               enable: true,
               enableDeck: true
             },
-            hideModal: {
+            dismissModal: {
               enable: true,
               enableDeck: true
             }
